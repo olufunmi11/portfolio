@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import blank from "./app/images/blank.jpg";
+import blank from "./app/images/thirdman.jpg";
 import rocks from "./app/images/rocks.jpg";
 import mirror from "./app/images/mirror.jpg";
 
@@ -21,7 +21,7 @@ const LearnMore: React.FC = () => {
           <div className=" bg-[#f4f5f8] shadow-md">
             <div className="relative">
               <Image
-                src="/images/blank.jpg"
+                src="/images/thirdman.jpg"
                 alt="background"
                 width={320}
                 height={200}
