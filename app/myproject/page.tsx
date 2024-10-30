@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import beach from "./app/images/bestasya.jpg";
-import desktop from "./app/images/markusspiske.jpg";
+import bestasya from "./app/images/bestasya.jpg";
+import markusspiske from "./app/images/markusspiske.jpg";
 import alexant from "./app/images/alexant.jpg";
 import agneselunecka from "./app/images/agneselunecka.jpg";
 
@@ -22,7 +22,7 @@ const LearnMore: React.FC = () => {
               <Image
                 src="/images/bestasya.jpg"
                 alt="background"
-                width={320}
+                width={355}
                 height={200}
               />
               <h2 className="text-2xl font-semibold mb-4 pl-4 pt-2">
@@ -45,7 +45,7 @@ const LearnMore: React.FC = () => {
               <Image
                 src="/images/markusspiske.jpg"
                 alt="background"
-                width={320}
+                width={355}
                 height={200}
               />
               <h2 className="text-2xl font-semibold mb-4 pl-4 pt-2">
@@ -83,7 +83,7 @@ const LearnMore: React.FC = () => {
               <Image
                 src="/images/alexant.jpg"
                 alt="background"
-                width={320}
+                width={355}
                 height={200}
               />
               <h2 className="text-2xl font-semibold mb-4 pl-4 pt-2">
@@ -102,7 +102,7 @@ const LearnMore: React.FC = () => {
               <Image
                 src="/images/agneselunecka.jpg"
                 alt="background"
-                width={320}
+                width={355}
                 height={200}
               />
               <h2 className="text-2xl font-semibold mb-4 pl-4 pt-2">

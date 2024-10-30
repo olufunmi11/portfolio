@@ -1,13 +1,13 @@
 import Image from "next/image";
 import React from "react";
-import blank from "./app/images/thirdman.jpg";
+import thirdman from "./app/images/thirdman.jpg";
 import rocks from "./app/images/rocks.jpg";
 import mirror from "./app/images/mirror.jpg";
 
 const LearnMore: React.FC = () => {
   return (
     <div className="py-24 bg-[#c9c1c1]">
-      <div className="container">
+      <div className="container-custom">
         <h1 className="text-4xl font-bold mb-6 text-center">About Me</h1>
         <p className="text-center font-normal text-2xl mt-10">
           Detailed-oriented and innovative Software Engineer with 2 years of
@@ -17,7 +17,7 @@ const LearnMore: React.FC = () => {
           Excellent problem solving skills and a passion for optimizing user
           experience and performance.
         </p>
-        <div className="grid grid-cols-3 gap-5 mt-10">
+        <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-5 mt-10">
           <div className=" bg-[#f4f5f8] shadow-md">
             <div className="relative">
               <Image

@@ -1,16 +1,29 @@
 "use client";
 
 import React, { useState } from "react";
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  addDoc,
+} from "firebase/firestore/lite";
+import { db } from "../firebase/page";
 
 const Contact: React.FC = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission logic (e.g., send data to an API)
+    const data = { name, email, message };
     console.log({ name, email, message });
+    console.log(db);
+    const colRef = collection(db, "contactus");
+    console.log(colRef);
+
+    const docRef = await addDoc(colRef, data);
     // Clear the form fields after submission
     setName("");
     setEmail("");

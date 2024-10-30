@@ -9,7 +9,7 @@
     background-blend-mode: darken;
   }
 
-  .container {
+  .container-custom {
     max-width: 1400px;
     padding: 0 2rem;
     margin: 0 auto;
